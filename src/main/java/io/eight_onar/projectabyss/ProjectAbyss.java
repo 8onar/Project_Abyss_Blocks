@@ -17,7 +17,7 @@ import org.slf4j.Logger;
 @Mod(ProjectAbyss.MOD_ID)
 public class ProjectAbyss
 {
-    public static final String MOD_ID = "CHANGE ME HERE AND IN gradle.properties";
+    public static final String MOD_ID = "eight_onarpablk";
 
     private static final Logger LOGGER = LogUtils.getLogger();
 
