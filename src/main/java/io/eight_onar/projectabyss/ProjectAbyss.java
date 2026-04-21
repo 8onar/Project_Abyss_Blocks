@@ -33,7 +33,7 @@ public class ProjectAbyss
     }
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-    //no one would
+    //no one woul
     }
 
     @SubscribeEvent
