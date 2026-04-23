@@ -2,6 +2,7 @@ package io.eight_onar.projectabyss;
 
 import com.mojang.logging.LogUtils;
 import io.eight_onar.projectabyss.block.Blocks;
+import io.eight_onar.projectabyss.creativetabs.CreativeTab;
 import io.eight_onar.projectabyss.item.Items;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.BlockItem;
@@ -32,6 +33,7 @@ public class ProjectAbyss
         IEventBus modEventBus = context.getModEventBus();
 
         modEventBus.addListener(this::commonSetup);
+        CreativeTab.register(modEventBus);
         Items.register(modEventBus);
         Blocks.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
@@ -42,11 +44,6 @@ public class ProjectAbyss
     {
 
     }
-//    public void addCreativeTab(BuildCreativeModeTabContentsEvent tabContentsEvent){
-//        if (tabContentsEvent.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
-//            tabContentsEvent.accept;
-//        }
-//    }
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event)
     {
