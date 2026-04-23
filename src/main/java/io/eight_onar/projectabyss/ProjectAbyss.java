@@ -1,9 +1,15 @@
 package io.eight_onar.projectabyss;
 
 import com.mojang.logging.LogUtils;
+import io.eight_onar.projectabyss.block.Blocks;
+import io.eight_onar.projectabyss.item.Items;
 import net.minecraft.client.Minecraft;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -26,16 +32,21 @@ public class ProjectAbyss
         IEventBus modEventBus = context.getModEventBus();
 
         modEventBus.addListener(this::commonSetup);
-
+        Items.register(modEventBus);
+        Blocks.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
 
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-    //no one woul
-    }
 
+    }
+//    public void addCreativeTab(BuildCreativeModeTabContentsEvent tabContentsEvent){
+//        if (tabContentsEvent.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+//            tabContentsEvent.accept;
+//        }
+//    }
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event)
     {
