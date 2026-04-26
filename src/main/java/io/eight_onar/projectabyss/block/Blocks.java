@@ -20,8 +20,18 @@ public class Blocks {
 
     public static final RegistryObject<Block> BLOCKY = registerBlock("blocky",
             () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.IRON_ORE).sound(SoundType.GLASS)));
-
-
+    public static final RegistryObject<Block> WHITE_CRYSTAL_BLOCK = registerBlock("white_crystal_block",
+            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.AMETHYST_BLOCK)));
+    public static final RegistryObject<Block> LIGHT_GREEN_CRYSTAL_BLOCK = registerBlock("lightgreen_crystal_block",
+            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.AMETHYST_BLOCK)));
+    public static  final RegistryObject<Block> BLUE_CRYSTAL_BLOCK = registerBlock("blue_crystal_block",
+            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.AMETHYST_BLOCK)));
+    public static final RegistryObject<Block> VOLCANIC_TUFF_BLOCK = registerBlock("volcanic_tuff_block",
+            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.TUFF)));
+    public static final RegistryObject<Block> CALCAREOUS_TUFF_BLOCK = registerBlock("calcareous_tuff_block",
+            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.TUFF)));
+    public static final RegistryObject<Block> GEYSERITE_BLOCK = registerBlock("geyserite_block",
+            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.TUFF)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toRet = BLOCKS.register(name, block);
