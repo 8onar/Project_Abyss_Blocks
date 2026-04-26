@@ -1,4 +1,10 @@
 {
   "block.eight_onarpablk.blocky": "???",
-  "ctab.abyss_blocks": "Abyss Blocks"
+  "block.eight_onarpablk.lightgreen_crystal_block": "LightGreen Crystal Block",
+  "block.eight_onarpablk.white_crystal_block": "White Crystal Block",
+  "block.eight_onarpablk.blue_crystal_block": "Blue Crystal Block",
+  "block.eight_onarpablk.volcanic_tuff_block": "Volcanic Tuff",
+  "block.eight_onarpablk.calcareous_tuff_block": "Calcareous Tuff",
+  "block.eight_onarpablk.geyserite_block": "Geyserite",
+  "tab.abyss_blocks": "Abyss Blocks"
 }

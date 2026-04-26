@@ -16,7 +16,7 @@ public class CreativeTab {
             () -> CreativeModeTab
                     .builder()
                     .icon(() -> Blocks.BLOCKY.get().asItem().getDefaultInstance())
-                    .title(Component.translatable("ctab.abyss_blocks"))
+                    .title(Component.translatable("tab.abyss_blocks"))
                     .displayItems((pParameters, output) -> {
                         Blocks.BLOCKS.getEntries().forEach(block -> output.accept(block.get()));
                     }).build());
