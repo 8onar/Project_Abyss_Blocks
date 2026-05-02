@@ -6,5 +6,6 @@
   "block.eight_onarpablk.volcanic_tuff_block": "Volcanic Tuff",
   "block.eight_onarpablk.calcareous_tuff_block": "Calcareous Tuff",
   "block.eight_onarpablk.geyserite_block": "Geyserite",
-  "tab.abyss_blocks": "Abyss Blocks"
+  "tab.dec_abyss_blocks": "Abyss Decorative Blocks",
+  "tab.func_abyss_blocks": "Abyss Functional Blocks"
 }
