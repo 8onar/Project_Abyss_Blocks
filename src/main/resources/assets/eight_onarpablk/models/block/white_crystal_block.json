@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "eight_onarpablk:block/crystals/white_crystal_block"
-  }
-}
