@@ -1,0 +1,23 @@
+{
+  "block.eight_onarpacpack.blocky": "???",
+  "block.eight_onarpacpack.lightgreen_crystal_block": "LightGreen Crystal Block",
+  "block.eight_onarpacpack.white_crystal_block": "White Crystal Block",
+  "block.eight_onarpacpack.blue_crystal_block": "Blue Crystal Block",
+  "block.eight_onarpacpack.volcanic_tuff_block": "Volcanic Tuff",
+  "block.eight_onarpacpack.calcareous_tuff_block": "Calcareous Tuff",
+  "block.eight_onarpacpack.geyserite_block": "Geyserite",
+
+  "item.eight_onarpacpack.puppy": "???",
+
+  "ctab.building_abyss_blocks": "Abyss Building Blocks",
+  "ctab.colored_abyss_blocks": "Abyss Colored Blocks",
+  "ctab.natural_abyss_blocks": "Abyss Natural Blocks",
+  "ctab.func_abyss_blocks": "Abyss Functional Blocks",
+
+  "ctab.tools_utilities_abyss_items": "Abyss Tools & Utilities",
+  "ctab.ingridients_abyss_items": "Abyss Ingridients",
+  "ctab.food_drinks_abyss_items": "Abyss Food & Drinks",
+  "ctab.combat_abyss_items": "Abyss Combat",
+
+  "ctab.misc_abyss_items": "Abyss Misc"
+}

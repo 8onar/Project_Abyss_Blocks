@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "eight_onarpablk:block/tuff_blocks/volcanic_tuff_block"
-  }
-}
