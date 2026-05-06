@@ -1,5 +1,7 @@
 {
+  "replace": false,
   "values": [
-
+    "eight_onarpacpack:block/dark_sand",
+    "eight_onarpacpack:block/dark_gravel"
   ]
 }
