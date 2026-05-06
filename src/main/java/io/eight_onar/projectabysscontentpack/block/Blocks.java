@@ -19,19 +19,19 @@ public class Blocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, ProjectAbyssContentPack.MOD_ID);
 
     public static final RegistryObject<Block> BLOCKY = registerBlock("blocky",
-            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.IRON_ORE).sound(SoundType.GLASS)));
+            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.IRON_ORE).sound(SoundType.GLASS).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> WHITE_CRYSTAL_BLOCK = registerBlock("white_crystal_block",
-            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.AMETHYST_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.AMETHYST_BLOCK).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> LIGHT_GREEN_CRYSTAL_BLOCK = registerBlock("lightgreen_crystal_block",
-            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.AMETHYST_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.AMETHYST_BLOCK).requiresCorrectToolForDrops()));
     public static  final RegistryObject<Block> BLUE_CRYSTAL_BLOCK = registerBlock("blue_crystal_block",
-            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.AMETHYST_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.AMETHYST_BLOCK).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> VOLCANIC_TUFF_BLOCK = registerBlock("volcanic_tuff_block",
-            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.TUFF)));
+            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.TUFF).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CALCAREOUS_TUFF_BLOCK = registerBlock("calcareous_tuff_block",
-            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.TUFF)));
+            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.TUFF).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> GEYSERITE_BLOCK = registerBlock("geyserite_block",
-            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.TUFF)));
+            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.TUFF).requiresCorrectToolForDrops()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toRet = BLOCKS.register(name, block);
