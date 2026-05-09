@@ -1,5 +1,7 @@
 {
+  "replace": false,
   "values": [
-
+    "onar_abyss:block/dark_sand",
+    "onar_abyss:block/dark_gravel"
   ]
 }

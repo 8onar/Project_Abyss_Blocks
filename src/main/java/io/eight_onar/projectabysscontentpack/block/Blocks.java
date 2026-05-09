@@ -5,6 +5,7 @@ import io.eight_onar.projectabysscontentpack.item.Items;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SandBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -32,14 +33,24 @@ public class Blocks {
             () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.TUFF).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> GEYSERITE_BLOCK = registerBlock("geyserite_block",
             () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.TUFF).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> NYTHERITE_ORE = registerBlock("nytherite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.ANCIENT_DEBRIS).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> UMBRYTE_ORE = registerBlock("umbryte_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.ANCIENT_DEBRIS).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> GRAVIUM_ORE = registerBlock("gravium_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.ANCIENT_DEBRIS).requiresCorrectToolForDrops()));
+
+    //change pDustColor
+    public static final RegistryObject<Block> BLACK_SAND = registerBlock("dark_sand",
+            () -> new SandBlock(5525356, BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.SAND)));
+    public static final RegistryObject<Block> BLACK_GRAVEL = registerBlock("dark_gravel",
+            () -> new SandBlock(4012367, BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.GRAVEL)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toRet = BLOCKS.register(name, block);
         registerBlockItem(name, toRet);
         return toRet;
     }
-
-
 
     private static <T extends Block>RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block){
         return Items.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));

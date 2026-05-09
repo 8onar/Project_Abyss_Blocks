@@ -20,7 +20,7 @@ import org.slf4j.Logger;
 @Mod(ProjectAbyssContentPack.MOD_ID)
 public class ProjectAbyssContentPack
 {
-    public static final String MOD_ID = "eight_onarpacpack";
+    public static final String MOD_ID = "onar_abyss";
 
     private static final Logger LOGGER = LogUtils.getLogger();
 
