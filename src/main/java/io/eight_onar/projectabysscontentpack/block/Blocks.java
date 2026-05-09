@@ -33,6 +33,12 @@ public class Blocks {
             () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.TUFF).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> GEYSERITE_BLOCK = registerBlock("geyserite_block",
             () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.TUFF).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> NYTHERITE_ORE = registerBlock("nytherite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.ANCIENT_DEBRIS).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> UMBRYTE_ORE = registerBlock("umbryte_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.ANCIENT_DEBRIS).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> GRAVIUM_ORE = registerBlock("gravium_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.ANCIENT_DEBRIS).requiresCorrectToolForDrops()));
 
     //change pDustColor
     public static final RegistryObject<Block> BLACK_SAND = registerBlock("dark_sand",

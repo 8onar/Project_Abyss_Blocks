@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "onar_abyss:item/puppy"
+  }
+}
