@@ -43,7 +43,7 @@ public class Blocks {
             () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.ANCIENT_DEBRIS).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> SWEET_ALYSSUM = registerBlock("sweet_alyssum",
             () -> new PinkPetalsBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.PINK_PETALS).noCollission()));
-    //change pDustColor
+    //change pDustColors
     public static final RegistryObject<Block> BLACK_SAND = registerBlock("dark_sand",
             () -> new SandBlock(5525356, BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.SAND)));
     public static final RegistryObject<Block> BLACK_GRAVEL = registerBlock("dark_gravel",
