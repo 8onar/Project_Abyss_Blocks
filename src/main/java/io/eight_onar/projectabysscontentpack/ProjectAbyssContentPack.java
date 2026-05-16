@@ -1,9 +1,9 @@
 package io.eight_onar.projectabysscontentpack;
 
 import com.mojang.logging.LogUtils;
-import io.eight_onar.projectabysscontentpack.block.Blocks;
-import io.eight_onar.projectabysscontentpack.creativetabs.CreativeTab;
-import io.eight_onar.projectabysscontentpack.item.Items;
+import io.eight_onar.projectabysscontentpack.init.custom.block.PABlocks;
+import io.eight_onar.projectabysscontentpack.init.custom.creativetabs.PACreativeTab;
+import io.eight_onar.projectabysscontentpack.init.custom.item.PAItems;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -29,9 +29,9 @@ public class ProjectAbyssContentPack
         IEventBus modEventBus = context.getModEventBus();
 
         modEventBus.addListener(this::commonSetup);
-        CreativeTab.register(modEventBus);
-        Items.register(modEventBus);
-        Blocks.register(modEventBus);
+        PACreativeTab.register(modEventBus);
+        PAItems.register(modEventBus);
+        PABlocks.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
 
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
