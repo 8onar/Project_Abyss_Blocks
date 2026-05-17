@@ -9,6 +9,9 @@
   "block.onar_abyss.dark_sand": "Dark Sand",
   "block.onar_abyss.dark_gravel": "Dark Gravel",
   "block.onar_abyss.sweet_alyssum": "Sweet Alyssum",
+  "block.onar_abyss.nytherite_block": "Nytherite Block",
+  "block.onar_abyss.umbryte_block": "Umbryte Block",
+  "block.onar_abyss.gravium_block": "Gravium Block",
 
   "block.onar_abyss.nytherite_ore": "Nytherite Ore",
   "block.onar_abyss.umbryte_ore": "Umbryte Ore",
@@ -16,6 +19,12 @@
 
 
   "item.onar_abyss.puppy": "???",
+  "item.onar_abyss.nytherite_ingot": "Nytherite Ingot",
+  "item.onar_abyss.umbryte_ingot": "Umbryte Ingot",
+  "item.onar_abyss.gravium_ingot": "Gravium Ingot",
+  "item.onar_abyss.raw_nytherite": "Raw Nytherite",
+  "item.onar_abyss.raw_umbryte": "Raw Umbryte",
+  "item.onar_abyss.raw_gravium": "Raw Gravium",
 
   "ctab.building_abyss_blocks": "Abyss Building Blocks",
   "ctab.colored_abyss_blocks": "Abyss Colored Blocks",

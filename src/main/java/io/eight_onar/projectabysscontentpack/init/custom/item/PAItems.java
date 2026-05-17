@@ -13,6 +13,19 @@ public class PAItems {
 
     public static final RegistryObject<Item> PUPPY = ITEMS.register("puppy",
             () -> new Item(new Item.Properties().stacksTo(42)));
+    public static final RegistryObject<Item> RAW_NYTHERITE = ITEMS.register("raw_nytherite",
+            () -> new Item(new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> RAW_UMBRYTE = ITEMS.register("raw_umbryte",
+            () -> new Item(new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> RAW_GRAVIUM = ITEMS.register("raw_gravium",
+            () -> new Item(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> NYTHERITE_INGOT = ITEMS.register("nytherite_ingot",
+            () -> new Item(new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> UMBRYTE_INGOT = ITEMS.register("umbryte_ingot",
+            () -> new Item(new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> GRAVIUM_INGOT = ITEMS.register("gravium_ingot",
+            () -> new Item(new Item.Properties().stacksTo(64)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

@@ -1,6 +1,7 @@
 package io.eight_onar.projectabysscontentpack;
 
 import com.mojang.logging.LogUtils;
+import io.eight_onar.projectabysscontentpack.data.generators.PARecipeProvider;
 import io.eight_onar.projectabysscontentpack.init.custom.block.PABlocks;
 import io.eight_onar.projectabysscontentpack.init.custom.creativetabs.PACreativeTab;
 import io.eight_onar.projectabysscontentpack.init.custom.item.PAItems;
