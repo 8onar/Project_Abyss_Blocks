@@ -28,6 +28,9 @@ public class PACreativeTab {
                         output.accept(PABlocks.BLUE_CRYSTAL_BLOCK.get());
                         output.accept(PABlocks.WHITE_CRYSTAL_BLOCK.get());
                         output.accept(PABlocks.LIGHT_GREEN_CRYSTAL_BLOCK.get());
+                        output.accept(PABlocks.NYTHERITE_BLOCK.get());
+                        output.accept(PABlocks.UMBRYTE_BLOCK.get());
+                        output.accept(PABlocks.GRAVIUM_BLOCK.get());
                     }).build());
     public static final RegistryObject<CreativeModeTab> TAB_COLORED_ABYSS_BLOCKS = CREATIVE_MODE_TABS.register("tab_colored_abyss_blocks",
             () -> CreativeModeTab
@@ -52,6 +55,9 @@ public class PACreativeTab {
                         output.accept(PABlocks.WHITE_CRYSTAL_BLOCK.get());
                         output.accept(PABlocks.LIGHT_GREEN_CRYSTAL_BLOCK.get());
                         output.accept(PABlocks.SWEET_ALYSSUM.get());
+                        output.accept(PABlocks.NYTHERITE_ORE.get());
+                        output.accept(PABlocks.UMBRYTE_ORE.get());
+                        output.accept(PABlocks.GRAVIUM_ORE.get());
                     }).build());
     public static final RegistryObject<CreativeModeTab> TAB_FUNC_ABYSS_BLOCKS = CREATIVE_MODE_TABS.register("tab_func_abyss_blocks",
             () -> CreativeModeTab
@@ -76,7 +82,12 @@ public class PACreativeTab {
                     .icon(() -> PAItems.PUPPY.get().getDefaultInstance())
                     .title(Component.translatable("ctab.ingridients_abyss_items"))
                     .displayItems((pParameters, output) -> {
-                        output.accept(PAItems.PUPPY.get());
+                        output.accept(PAItems.NYTHERITE_INGOT.get());
+                        output.accept(PAItems.UMBRYTE_INGOT.get());
+                        output.accept(PAItems.GRAVIUM_INGOT.get());
+                        output.accept(PAItems.RAW_NYTHERITE.get());
+                        output.accept(PAItems.RAW_UMBRYTE.get());
+                        output.accept(PAItems.RAW_GRAVIUM.get());
                     }).build());
     public static final RegistryObject<CreativeModeTab> TAB_FOOD_DRINKS_ABYSS_ITEMS = CREATIVE_MODE_TABS.register("tab_food_drinks_abyss_items",
             ()-> CreativeModeTab

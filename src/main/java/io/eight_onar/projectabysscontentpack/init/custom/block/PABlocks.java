@@ -18,7 +18,7 @@ public class PABlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, ProjectAbyssContentPack.MOD_ID);
 
     public static final RegistryObject<Block> BLOCKY = registerBlock("blocky",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).sound(SoundType.GLASS).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).sound(SoundType.GLASS).requiresCorrectToolForDrops().noLootTable()));
     public static final RegistryObject<Block> WHITE_CRYSTAL_BLOCK = registerBlock("white_crystal_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> LIGHT_GREEN_CRYSTAL_BLOCK = registerBlock("lightgreen_crystal_block",
@@ -38,7 +38,15 @@ public class PABlocks {
     public static final RegistryObject<Block> GRAVIUM_ORE = registerBlock("gravium_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.ANCIENT_DEBRIS).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> SWEET_ALYSSUM = registerBlock("sweet_alyssum",
-            () -> new PinkPetalsBlock(BlockBehaviour.Properties.copy(Blocks.PINK_PETALS).noCollission()));
+            () -> new PinkPetalsBlock(BlockBehaviour.Properties.copy(Blocks.PINK_PETALS).noCollission().noLootTable()));
+
+    public static final RegistryObject<Block> NYTHERITE_BLOCK = registerBlock("nytherite_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> UMBRYTE_BLOCK = registerBlock("umbryte_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> GRAVIUM_BLOCK = registerBlock("gravium_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+
     //change pDustColors
     public static final RegistryObject<Block> DARK_SAND = registerBlock("dark_sand",
             () -> new SandBlock(5525356, BlockBehaviour.Properties.copy(Blocks.SAND)));
